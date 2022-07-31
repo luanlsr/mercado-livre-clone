@@ -6,31 +6,28 @@ import { CgChevronDown } from 'react-icons/cg';
 import { useEffect, useState } from 'react';
 import { api } from '../../data/api/api';
 import { useDispatch } from 'react-redux';
-import { setProducts } from '../../redux/slices/productSlice';
+import { useNavigate } from 'react-router-dom';
+import { setProducts, setSearch } from '../../redux/slices/productSlice';
 
 const SearchBar = () => {
-  const [products, setProdutcs] = useState([]);
+  // const [products, setProdutcs] = useState({});
+  const [searchValue, setSearchValue] = useState('');
+
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  console.log(
-    '🚀 ~ file: SearchBar.tsx ~ line 9 ~ SearchBar ~ products',
-    products,
-  );
-
-  useEffect(() => {
-    dispatch(setProducts(products));
-  }, [dispatch, products]);
-
-  const [searchValue, setSearchValue] = useState('');
+  // useEffect(() => {}, [dispatch, products]);
 
   const handleClick = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     const searchProducts = async () => {
       const result = await api(
-        `https://api.mercadolibre.com/sites/MLA/search?q=${searchValue}`,
+        `https://api.mercadolibre.com/sites/MLB/search?q=${searchValue}`,
         'GET',
       );
-      setProdutcs(result);
+      dispatch(setProducts(result));
+      dispatch(setSearch(searchValue));
+      navigate('/products');
     };
     searchProducts().catch(console.error);
   };

@@ -1,11 +1,11 @@
 import Header from '../components/Header/Header';
-import ProductCard from '../components/Main/ProductCard';
+import '../assets/styles/globals.css';
 
 function MainPage() {
   return (
     <div className="MainPage">
       <Header />
-      <ProductCard />
+      {/* <ProductCard /> */}
     </div>
   );
 }
