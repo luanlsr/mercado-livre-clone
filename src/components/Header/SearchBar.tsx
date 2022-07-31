@@ -6,18 +6,33 @@ import { api } from '../../data/api/api';
 
 const SearchBar = () => {
   const [products, setProdutcs] = useState([]);
+  console.log(
+    '🚀 ~ file: SearchBar.tsx ~ line 9 ~ SearchBar ~ products',
+    products,
+  );
   const [searchValue, setSearchValue] = useState('');
 
-  useEffect(() => {
+  const handleClick = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
     const searchProducts = async () => {
       const result = await api(
-        `https://api.mercadolibre.com/sites/MLA/search?q=carro`,
+        `https://api.mercadolibre.com/sites/MLA/search?q=${searchValue}`,
         'GET',
       );
       setProdutcs(result);
     };
     searchProducts().catch(console.error);
-  }, []);
+  };
+  // useEffect(() => {
+  //   const searchProducts = async () => {
+  //     const result = await api(
+  //       `https://api.mercadolibre.com/sites/MLA/search?q=${searchValue}`,
+  //       'GET',
+  //     );
+  //     setProdutcs(result);
+  //   };
+  //   searchProducts().catch(console.error);
+  // }, [searchValue]);
 
   const handleChange = (e: { target: { value: string } }) => {
     const { value } = e.target;
@@ -27,7 +42,7 @@ const SearchBar = () => {
   return (
     <div className="all-header search-bar">
       <img className="logo-meli" src={logo} alt="logo-meli" />
-      <form id="search-form" action="GET">
+      <form id="search-form" onSubmit={handleClick}>
         <input
           value={searchValue}
           onChange={handleChange}

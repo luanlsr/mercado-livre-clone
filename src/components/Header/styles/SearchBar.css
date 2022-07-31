@@ -26,7 +26,7 @@
   transition: left .15s ease-out;
 }
 
-.search-input{
+.search-input {
   width: 700px;
   height: 39px;
   padding: 7px 60px 9px 15px;
@@ -42,7 +42,11 @@
 
 .search-input::placeholder {
   color: var(--text-secondary);
-opacity: 0.3;
+  opacity: 0.3;
+}
+
+.search-input:focus{
+  outline: none;
 }
 
 .search-btn{
