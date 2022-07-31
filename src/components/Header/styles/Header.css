@@ -1,6 +1,6 @@
 .header{
   display: flex;
-  background-color: var(--header);
+  background-color: var(--primary);
   height: 100px;
-  width: 100vw;
+  width: 100%;
 }

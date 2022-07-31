@@ -1,5 +1,10 @@
 :root{
-  --header: #FFF159
+  /* Themes */
+  --primary: #FFF159;
+  --text-secondary: #333;
+
+   /* Colors */
+  --white: #FFF;
 }
 
 * {

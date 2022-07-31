@@ -3,7 +3,72 @@
   justify-content: center;
   align-items: center;
   height: 100px;
+  margin-top: 6px;
 }
+
+.logo-meli {
+  height: 2.4rem;
+  cursor: pointer;
+}
+
 
 .search-bar {
 }
+
+.search-form{
+  display: flex;
+  padding: 8px 1px;
+  overflow: auto;
+  height: 56px;
+  position: relative;
+  z-index: 910;
+  will-change: left;
+  transition: left .15s ease-out;
+}
+
+.search-input{
+  width: 700px;
+  height: 39px;
+  padding: 7px 60px 9px 15px;
+  margin-left: 60px;
+  border-radius: 2px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  background-color: #fff;
+  color: var(--text-secondary);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary);
+opacity: 0.3;
+}
+
+.search-btn{
+  left: auto;
+  background-image: none;
+  height: 39px;
+  padding-top: 2px;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+  width: 46px;
+  z-index: 920;
+  position: absolute;
+  border: none;
+  box-shadow: 0px 0px 1px 0px var(--text-secondary);
+  background-color: #fff;
+}
+
+.search-icon{
+  font-size: 20px;
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.logo-disney {
+  width: 360px;
+  margin-left: 120px;
+  cursor: pointer;
+}
+

@@ -2,23 +2,6 @@
   display: flex;
   flex-direction: column;
   height: auto;
-  max-width: 1200px;
-  width: auto;
+  /* width: 66%; */
   padding-left: 20rem;
-}
-
-.logo-meli {
-  height: 2.2rem;;
-}
-
-.all-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-.top-header {
-}
-
-.bottom-header {
 }
