@@ -1,6 +1,8 @@
 import './styles/SearchBar.css';
 import { FaSistrix } from 'react-icons/fa';
 import logo from '../../assets/images/Mercado-Livre-logo.png';
+import { IoLocationOutline } from 'react-icons/io5';
+import { CgChevronDown } from 'react-icons/cg';
 import { useEffect, useState } from 'react';
 import { api } from '../../data/api/api';
 import { useDispatch } from 'react-redux';
@@ -32,37 +34,42 @@ const SearchBar = () => {
     };
     searchProducts().catch(console.error);
   };
-  // useEffect(() => {
-  //   const searchProducts = async () => {
-  //     const result = await api(
-  //       `https://api.mercadolibre.com/sites/MLA/search?q=${searchValue}`,
-  //       'GET',
-  //     );
-  //     setProdutcs(result);
-  //   };
-  //   searchProducts().catch(console.error);
-  // }, [searchValue]);
 
   return (
-    <div className="all-header search-bar">
-      <img className="logo-meli" src={logo} alt="logo-meli" />
-      <form id="search-form" onSubmit={handleClick}>
-        <input
-          value={searchValue}
-          onChange={e => setSearchValue(e.target.value)}
-          className="search-input"
-          type="text"
-          placeholder="Buscar produtos, marcas e muito mais..."
-        />
-        <button className="search-btn">
-          <FaSistrix className="search-icon" />
-        </button>
-      </form>
-      <img
-        className="logo-disney"
-        src="https://http2.mlstatic.com/D_NQ_806934-MLA50801953236_072022-OO.webp"
-        alt=""
-      />
+    <div className="all-header">
+      <div className="search-bar">
+        <img className="logo-meli" src={logo} alt="logo-meli" />
+        <form id="search-form" onSubmit={handleClick}>
+          <input
+            value={searchValue}
+            onChange={e => setSearchValue(e.target.value)}
+            className="search-input"
+            type="text"
+            placeholder="Buscar produtos, marcas e muito mais..."
+          />
+          <button className="search-btn">
+            <FaSistrix className="search-icon" />
+          </button>
+        </form>
+      </div>
+      <ul className="menu-list">
+        <li className="address-container">
+          <IoLocationOutline className="localization-icon" />
+          <div className="address">
+            <span>Enviar para LUAN</span>
+            <p>Rua São Gonçalo 57</p>
+          </div>
+        </li>
+        <li>
+          Categorias
+          <CgChevronDown />
+        </li>
+        <li>Ofertas do dia</li>
+        <li>Histórico</li>
+        <li>Moda</li>
+        <li>Vender</li>
+        <li>Contato</li>
+      </ul>
     </div>
   );
 };

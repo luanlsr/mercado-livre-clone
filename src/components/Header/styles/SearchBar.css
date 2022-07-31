@@ -1,9 +1,13 @@
 .all-header {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   height: 100px;
-  margin-top: 6px;
+  margin-top: 10px;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .logo-meli {
@@ -11,12 +15,9 @@
   cursor: pointer;
 }
 
-
-.search-bar {
-}
-
 .search-form{
   display: flex;
+  flex-direction: column;
   padding: 8px 1px;
   overflow: auto;
   height: 56px;
@@ -27,10 +28,10 @@
 }
 
 .search-input {
-  width: 700px;
+  width: 550px;
   height: 39px;
   padding: 7px 60px 9px 15px;
-  margin-left: 60px;
+  margin-left: 50px;
   border-radius: 2px;
   font-size: 16px;
   border: none;
@@ -68,6 +69,93 @@
   font-size: 20px;
   color: var(--text-secondary);
   opacity: 0.6;
+}
+
+.menu {
+  margin-left: 160px;
+  color: var(--text-secondary);
+  font-weight: 200;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-list li{
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 10px;
+  font-weight: 100;
+  color: var(--text-secondary);
+}
+
+.menu-list li:hover{
+  color: var(--text-primary);
+  font-weight: 300;
+}
+
+.address-container {
+  display: flex;
+  width: auto;
+  cursor: pointer;
+  line-height: 14px;
+  /* position: absolute; */
+  padding: 2px;
+  margin-top: 5px 0;
+  transition:all 0.3s ease-in-out;
+}
+
+.address-container::after {
+  content: '';
+  width: calc(12% - 2px);
+  height: calc(90% - 2px);
+  border: 1px solid rgb(0 0 0 / 20%);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.address-container:hover::after {
+  display: block;
+  /* border-radius: 3px;
+  border: solid 1px var(--text-secondary);
+  animation-delay: 0.5s; */
+}
+
+.address {
+  color: var(--text-secondary);
+}
+
+.localization-icon {
+  font-weight: 100;
+  color: var(--text-secondary);
+  font-size: 22px;
+}
+
+.address span{
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.address p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.account {
+  display: flex;
+}
+
+.account a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 .logo-disney {

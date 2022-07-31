@@ -1,7 +1,6 @@
 .center-header {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   height: auto;
-  /* width: 66%; */
-  padding-left: 20rem;
+  width: 50%;
 }

@@ -1,9 +1,46 @@
-.all-header {
+.menu-container{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  padding: 8px 0;
+  width: auto;
+  height: auto;
 }
 
-.menu {
+.perfil {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-perfil{
+  margin-left: 5px;
+  color: var(--text-secondary);
+  font-weight: 200;
+}
+
+.photo-perfil {
+  width: 20px;
+  border-radius: 50%;
+}
+
+.item {
+  margin-left: 16px;
+  color: var(--text-secondary);
+
+}
+
+.shop {
+}
+
+.rate {
+}
+
+.notification-icon {
+  color: var(--text-secondary);
+}
+
+.cart-icon{
+  color: var(--text-secondary);
 }
