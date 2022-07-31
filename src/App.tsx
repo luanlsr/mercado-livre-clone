@@ -1,7 +1,10 @@
+import Header from './components/Header/Header';
+import './assets/styles/globals.css';
+
 function App() {
   return (
     <div className="App">
-      <h1>Mercado Livre</h1>
+      <Header />
     </div>
   );
 }
