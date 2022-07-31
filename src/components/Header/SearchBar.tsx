@@ -3,13 +3,22 @@ import { FaSistrix } from 'react-icons/fa';
 import logo from '../../assets/images/Mercado-Livre-logo.png';
 import { useEffect, useState } from 'react';
 import { api } from '../../data/api/api';
+import { useDispatch } from 'react-redux';
+import { setProducts } from '../../redux/slices/productSlice';
 
 const SearchBar = () => {
   const [products, setProdutcs] = useState([]);
+  const dispatch = useDispatch();
+
   console.log(
     '🚀 ~ file: SearchBar.tsx ~ line 9 ~ SearchBar ~ products',
     products,
   );
+
+  useEffect(() => {
+    dispatch(setProducts(products));
+  }, [dispatch, products]);
+
   const [searchValue, setSearchValue] = useState('');
 
   const handleClick = (e: { preventDefault: () => void }) => {
@@ -34,18 +43,13 @@ const SearchBar = () => {
   //   searchProducts().catch(console.error);
   // }, [searchValue]);
 
-  const handleChange = (e: { target: { value: string } }) => {
-    const { value } = e.target;
-    setSearchValue(value);
-  };
-
   return (
     <div className="all-header search-bar">
       <img className="logo-meli" src={logo} alt="logo-meli" />
       <form id="search-form" onSubmit={handleClick}>
         <input
           value={searchValue}
-          onChange={handleChange}
+          onChange={e => setSearchValue(e.target.value)}
           className="search-input"
           type="text"
           placeholder="Buscar produtos, marcas e muito mais..."
