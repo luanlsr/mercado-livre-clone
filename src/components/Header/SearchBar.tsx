@@ -35,11 +35,17 @@ const SearchBar = () => {
   return (
     <div className="all-header">
       <div className="search-bar">
-        <img className="logo-meli" src={logo} alt="logo-meli" />
+        <img
+          onClick={() => navigate('/')}
+          className="logo-meli"
+          src={logo}
+          alt="logo-meli"
+        />
         <form id="search-form" onSubmit={handleClick}>
           <input
             value={searchValue}
             onChange={e => setSearchValue(e.target.value)}
+            onKeyDown={e => setSearchValue(e.target.value)}
             className="search-input"
             type="text"
             placeholder="Buscar produtos, marcas e muito mais..."
