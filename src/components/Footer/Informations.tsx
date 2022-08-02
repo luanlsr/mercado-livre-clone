@@ -1,39 +1,27 @@
+import { useEffect, useState } from 'react';
 import { BsChevronUp } from 'react-icons/bs';
+import { useDispatch } from 'react-redux';
+import { setHidden } from '../../redux/slices/mainSlice';
 import './style/Information.css';
 
 function Information() {
+  const dispatch = useDispatch();
+  const [isHidden, setIsHidden] = useState(false);
+
+  useEffect(() => {
+    dispatch(setHidden(isHidden));
+  }, [dispatch, isHidden]);
+
+  const handleClick = () => {
+    setIsHidden(!isHidden);
+  };
+
   return (
     <div className="information">
-      <button className="btn-more-information">
+      <button onClick={handleClick} className="btn-more-information">
         Mais informações
         <BsChevronUp className="arrow-icon" />
       </button>
-      <div className="hidden-menu">
-        <div>
-          <p>Sobre o</p>
-          <ul></ul>
-        </div>
-        <div>
-          <p>Outros sites</p>
-          <ul></ul>
-        </div>
-        <div>
-          <p>Contato</p>
-          <ul></ul>
-        </div>
-        <div>
-          <p>Redes sociais</p>
-          <ul></ul>
-        </div>
-        <div>
-          <p>Minha conta</p>
-          <ul></ul>
-        </div>
-        <div>
-          <p>Mercado pontos</p>
-          <ul></ul>
-        </div>
-      </div>
     </div>
   );
 }

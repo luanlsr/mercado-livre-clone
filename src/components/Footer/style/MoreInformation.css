@@ -1,0 +1,29 @@
+.hidden-menu-container {
+  width: 100%;
+  background-color: var(--secondary-a);
+  height: 262px;
+}
+
+.hidden-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 30px 400px;
+}
+
+.hidden-menu p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.information-list {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.information-list a{
+  text-decoration: none;
+  color: var(--text-secondary-a);
+  font-size: 14px;
+}

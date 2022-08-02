@@ -1,9 +1,11 @@
 .information {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   height: 64px;
   background-color: var(--secondary);
+  position: relative;
 }
 
 .btn-more-information {
@@ -16,8 +18,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  bottom: 0;
+  position: absolute;
+  border-radius: 5px 5px 0 0;
 }
 
 .arrow-icon {
   margin-left: 4px;
 }
+
