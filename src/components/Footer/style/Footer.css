@@ -1,0 +1,35 @@
+.more-information{
+  background-color:#e7e7e7;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0;
+  height: 86px;
+}
+
+.footer p{
+  font-size: 12px;
+  color: var(--text-secondary-a);
+}
+
+.list-footer {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 850px;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.list-footer li{
+  font-size: 14px;
+}
+
+.list-footer li > a{
+  text-decoration: none;
+  color: var(--text-secondary);
+}

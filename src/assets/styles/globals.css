@@ -1,8 +1,10 @@
 :root{
   /* Themes */
   --primary: #FFF159;
+  --secondary: #e7e7e7;
   --text-primary: #000;
   --text-secondary: #333;
+  --text-secondary-a: #999;
 
    /* Colors */
   --white: #FFF;
