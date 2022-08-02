@@ -1,0 +1,14 @@
+.sales-container  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sales-container  h2{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 50px;
+  letter-spacing: 1.5px;
+  color: var(--text-secondary);
+}
