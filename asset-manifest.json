@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/mercado-livre-clone/static/css/main.b6c89646.css",
+    "main.js": "/mercado-livre-clone/static/js/main.359e47b7.js",
+    "static/media/luan-perfil.png": "/mercado-livre-clone/static/media/luan-perfil.e3a8722401f86769377c.png",
+    "static/media/Mercado-Livre-logo.png": "/mercado-livre-clone/static/media/Mercado-Livre-logo.e4e0c8d4a5d42f93a9de.png",
+    "static/media/salebannerflamengo.webp": "/mercado-livre-clone/static/media/salebannerflamengo.ee9686f9816657bb62bf.webp",
+    "static/media/banner3.webp": "/mercado-livre-clone/static/media/banner3.384c6de23d63b1236782.webp",
+    "static/media/banner2.webp": "/mercado-livre-clone/static/media/banner2.da0b4a21e511022e891d.webp",
+    "static/media/banner5.webp": "/mercado-livre-clone/static/media/banner5.b6bb496133a145670655.webp",
+    "static/media/banner7.webp": "/mercado-livre-clone/static/media/banner7.b0520691dc5abe77ab30.webp",
+    "static/media/banner1.webp": "/mercado-livre-clone/static/media/banner1.c5ec5f28e48c34110cfe.webp",
+    "static/media/banner4.webp": "/mercado-livre-clone/static/media/banner4.cf4a635817f97cda6202.webp",
+    "static/media/banner6.webp": "/mercado-livre-clone/static/media/banner6.e28b0635e016298a0999.webp",
+    "static/media/salebanner1.webp": "/mercado-livre-clone/static/media/salebanner1.00d4d9d12eb74045741c.webp",
+    "static/media/salebanner2.webp": "/mercado-livre-clone/static/media/salebanner2.6ea7c8b182dd37a9c633.webp",
+    "static/media/sale2.webp": "/mercado-livre-clone/static/media/sale2.543934e6ecf6daae8dfd.webp",
+    "static/media/sale6.webp": "/mercado-livre-clone/static/media/sale6.f692764e23c35574eaa0.webp",
+    "static/media/sale1.webp": "/mercado-livre-clone/static/media/sale1.8b04ba5a6bfef5626ded.webp",
+    "static/media/sale7.webp": "/mercado-livre-clone/static/media/sale7.35928778c0729f20c946.webp",
+    "static/media/sale5.webp": "/mercado-livre-clone/static/media/sale5.37917e336e8ce4328635.webp",
+    "static/media/sale3.webp": "/mercado-livre-clone/static/media/sale3.c6f7f29c7ef521fc7171.webp",
+    "static/media/sale4.webp": "/mercado-livre-clone/static/media/sale4.9c089e1bda520bf3c042.webp",
+    "index.html": "/mercado-livre-clone/index.html",
+    "main.b6c89646.css.map": "/mercado-livre-clone/static/css/main.b6c89646.css.map",
+    "main.359e47b7.js.map": "/mercado-livre-clone/static/js/main.359e47b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6c89646.css",
+    "static/js/main.359e47b7.js"
+  ]
+}
