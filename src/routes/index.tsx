@@ -14,7 +14,7 @@ export const RoutesBuilder = () => {
 
 export const CreateRoutes = (): JSX.Element => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <RoutesBuilder />
     </BrowserRouter>
   );
