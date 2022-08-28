@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mercado-livre-clone/static/css/main.b6c89646.css",
-    "main.js": "/mercado-livre-clone/static/js/main.3b1064a9.js",
+    "main.js": "/mercado-livre-clone/static/js/main.64377c30.js",
     "static/media/luan-perfil.png": "/mercado-livre-clone/static/media/luan-perfil.e3a8722401f86769377c.png",
     "static/media/Mercado-Livre-logo.png": "/mercado-livre-clone/static/media/Mercado-Livre-logo.e4e0c8d4a5d42f93a9de.png",
     "static/media/salebannerflamengo.webp": "/mercado-livre-clone/static/media/salebannerflamengo.ee9686f9816657bb62bf.webp",
@@ -23,10 +23,10 @@
     "static/media/sale4.webp": "/mercado-livre-clone/static/media/sale4.9c089e1bda520bf3c042.webp",
     "index.html": "/mercado-livre-clone/index.html",
     "main.b6c89646.css.map": "/mercado-livre-clone/static/css/main.b6c89646.css.map",
-    "main.3b1064a9.js.map": "/mercado-livre-clone/static/js/main.3b1064a9.js.map"
+    "main.64377c30.js.map": "/mercado-livre-clone/static/js/main.64377c30.js.map"
   },
   "entrypoints": [
     "static/css/main.b6c89646.css",
-    "static/js/main.3b1064a9.js"
+    "static/js/main.64377c30.js"
   ]
 }
